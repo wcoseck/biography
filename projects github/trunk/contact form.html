@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contact Us </title> 
+
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-nav">
+            <img src="https://www.biography.com/.image/c_fit%2Ccs_srgb%2Cq_auto:good%2Cw_916/MTQ1NTMzOTkyNDA0MjY0NTAz/sitelogowhite.webp" class="logo-biography" style="max-height:122px;">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">PEOPLE</a></li>
+                <li><a href="#">NOSTALGIA</a></li>
+                <li><a href="#">CELEBRITY</a></li>
+                <li><a href="#">HISTORY & CULTURE</a></li>
+                <li><a href="#">CRIME & SCANDAL</a></li>
+                <li><a href="#">VIDEO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <div class="left-side">
+                <div class="address details">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="topic">Address</div>
+                    <div class="text-one">AAAAA, NP12</div>
+                    <div class="text-two">ABCD 06</div>
+                </div>
+
+                <div class="phone details">
+                    <i class="fas fa-phone-alt"></i>
+                    <div class="topic">Phone</div>
+                    <div class="text-one">+0098 9893 5647</div>
+                    <div class="text-two">+0096 3434 5678</div>
+                </div>
+                <div class="email details">
+                    <i class="fas fa-envelope"></i>
+                    <div class="topic">Email</div>
+                    <div class="text-one">xxxxxxx@gmail.com</div>
+                    <div class="text-two">info.xxxxAA@gmail.com</div>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="topic-text">Send us a message</div>
+                <p>If you have any questions please ask away! It would be our pleasure.</p>
+
+                <form action="#">
+                    <div class="input-box">
+                        <input type="text" placeholder="Enter your name" id="name">
+                    </div>
+                    <div class="input-box">
+                        <input type="text" placeholder="Enter your email" id="email">
+                    </div>
+                    <div class="input-box message-box">
+                        <textarea placeholder="Enter your message" id="message"></textarea>
+                    </div>
+                    <div class="button">
+                        <input type="button" onclick="getInputValue();" value="Send Now" >
+                    </div>
+                </form>
+
+                <script>
+                    function getInputValue() {
+
+                    var name = document.getElementById("name").value;
+                    var email = document.getElementById("email").value;
+                    var message = document.getElementById("message").value;
+
+                    alert(name + " "  + " " + email + " "  + " " + message);
+                }
+                </script>
+
+
+            </div>
+        </div>
+    </div>
+   
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+// document.getElementById("submitButton").onclick = function (){
+
+//         var fname = document.getElementById("fname").value
+//         if (fname == null || fname == "") {
+//             txt = "No name provided";           
+//         } else {
+//             txt = fname;
+//         }
+//         var lname = document.getElementById("lname").value
+//         if (fname == null || fname == "") {
+//             txt = "No name provided";           
+//         } else {
+//             txt = fname + " " + lname;
+//         }
+//         alert(txt);
+
+
+// }
+
+
+function Init(){
+    debugger;
+    let element = document.getElementById('midiv');
+    let body = document.getElementsByTagName('body')[0];
+    element.classList.add('other-position');
+    
+}
